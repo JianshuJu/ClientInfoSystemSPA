@@ -20,11 +20,11 @@ export class InteractionEmployeeComponent implements OnInit {
         this.employeeId = this.route.snapshot.params['id'];
         this.getInteractions();
       }
-    )
+    );
   }
 
   private getInteractions() {
-    this.interactionService.getByClient(this.employeeId).subscribe(
+    this.interactionService.getByEmployee(this.employeeId).subscribe(
       i => {
         this.interactions = i;
       }
