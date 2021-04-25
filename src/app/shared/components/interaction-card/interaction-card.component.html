@@ -1,0 +1,12 @@
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <a [routerLink]="['/interaction/', interaction?.id]">
+            <h5 class="card-title">{{interaction?.intDate}}</h5>
+        </a>
+
+        <h6 class="card-subtitle mb-2 text-muted">Interaction Type: {{interaction?.intType}}</h6>
+        
+        <p class="card-text">{{interaction?.remarks}}</p>
+        
+    </div>
+</div>

@@ -1,0 +1,46 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            Interaction Date: {{interactionDetail?.intDate}}
+        </div>
+        <div class="col">
+            Interaction Type: {{interactionDetail?.intType}}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            Interaction Remarks: {{interactionDetail?.remarks}}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            Client Name: 
+            <a [routerLink]="['/client/', interactionDetail?.clientId]" >{{interactionDetail?.clientName}}</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            Client Email: {{interactionDetail?.clientEmail}}
+        </div>
+        <div class="col">
+            Client Phones: {{interactionDetail?.clientPhones}}
+        </div>
+        <div class="col">
+            Client Address: {{interactionDetail?.clientAddress}}
+        </div>
+        <div class="col">
+            Client AddedOn: {{interactionDetail?.clientAddedOn}}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            Employee Name: 
+            <a [routerLink]="['/employee/', interactionDetail?.empId]" >{{interactionDetail?.empName}}</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            Employee Designation: {{interactionDetail?.empDesignation}}
+        </div>
+    </div>
+</div>
